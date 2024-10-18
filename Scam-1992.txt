@@ -1,0 +1,28 @@
+1. Install  kubectl - https://kubernetes.io/releases/download/#binaries
+
+2. Install minikube - https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+download
+
+
+3. check for kubectl and minikube is installed or not
+
+4. minikube start --driver=docker [ docker rmi image_id if two images created for minikube]
+
+5. minikube image load image_name
+
+6. check for image - minikube image ls
+
+7. create yaml file to automate the process of deployment and service
+
+8. update image name in yaml file
+
+9. apply yaml file - kubectl apply -f yaml_file.yaml
+
+10. Expose the service - kubectl expose deployments deployment_name --type=NodePort --port=5000
+
+
+* Deployment done upto now...
+
+* To get url
+
+
+11. minikube service deployment-name --url
